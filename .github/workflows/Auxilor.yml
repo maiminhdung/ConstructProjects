@@ -129,3 +129,11 @@ jobs:
       name: "EcoShop"
       java: 17
       readonly: true
+  EcoBits:
+    uses: HSGamer/ConstructProjects/.github/workflows/gradle-build.yml@main
+    with:
+      repository: "Auxilor/EcoBits"
+      target: "bin/*"
+      name: "EcoEcoBits"
+      java: 17.0.1
+      readonly: true
