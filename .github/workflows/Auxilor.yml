@@ -135,5 +135,5 @@ jobs:
       repository: "Auxilor/EcoBits"
       target: "bin/*"
       name: "EcoEcoBits"
-      java: 17.0.1
+      java: 17
       readonly: true
