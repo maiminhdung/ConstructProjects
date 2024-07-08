@@ -33,10 +33,10 @@ jobs:
       name: "EcoCrates"
       java: 17
       readonly: true
-  EcoBosses:
+  EcoMobs:
     uses: HSGamer/ConstructProjects/.github/workflows/gradle-build.yml@main
     with:
-      repository: "Auxilor/EcoBosses"
+      repository: "Auxilor/EcoMobs"
       target: "bin/*"
       name: "EcoBosses"
       java: 17
@@ -63,14 +63,6 @@ jobs:
       repository: "Auxilor/Reforges"
       target: "bin/*"
       name: "Reforges"
-      java: 17
-      readonly: true
-  EcoWeapons:
-    uses: HSGamer/ConstructProjects/.github/workflows/gradle-build.yml@main
-    with:
-      repository: "Auxilor/EcoWeapons"
-      target: "bin/*"
-      name: "EcoWeapons"
       java: 17
       readonly: true
   Talismans:
@@ -135,5 +127,13 @@ jobs:
       repository: "Auxilor/EcoBits"
       target: "bin/*"
       name: "EcoBits"
+      java: 17
+      readonly: true
+  EcoQuests:
+    uses: HSGamer/ConstructProjects/.github/workflows/gradle-build.yml@main
+    with:
+      repository: "Auxilor/EcoQuests"
+      target: "bin/*"
+      name: "EcoQuests"
       java: 17
       readonly: true
