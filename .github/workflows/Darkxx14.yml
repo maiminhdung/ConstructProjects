@@ -1,15 +1,17 @@
+name: Darkxx14
+
 on:
-    push:
-      branches: [ main ]
-      paths:
-        - '.github/workflows/Darkxx14.yml'
-    schedule:
-      - cron: '0 */6 * * *'
-  
-  jobs:
-    EcoJobs:
-      uses: Dungjava/ConstructProjects/.github/workflows/gradle-build.yml@main
-      with:
-        repository: "Darkxx14/XyrisFFA"
-        name: "XyrisFFA"
-        java: 17
+  push:
+    branches: [ main ]
+    paths:
+    - '.github/workflows/Darkxx14.yml'
+  schedule:
+    - cron: '0 */6 * * *'
+
+jobs:
+  XyrisFFA:
+    uses: Dungjava/ConstructProjects/.github/workflows/gradle-build.yml@main
+    with:
+      repository: "Darkxx14/XyrisFFA"
+      name: "XyrisFFA"
+      java: 17
