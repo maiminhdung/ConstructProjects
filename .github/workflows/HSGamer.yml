@@ -9,7 +9,7 @@ on:
     - cron: '0 0 */3 * *'
 
 jobs: 
-  PlayerVaults:
+  BetterForms:
     uses: HSGamer/ConstructProjects/.github/workflows/maven-build.yml@main
     with:
       repository: "BetterGUI-MC/BetterForms"
