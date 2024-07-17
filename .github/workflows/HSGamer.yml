@@ -1,0 +1,18 @@
+name: HSGamer
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '.github/workflows/HSGamer.yml'
+  schedule:
+    - cron: '0 0 */3 * *'
+
+jobs: 
+  PlayerVaults:
+    uses: HSGamer/ConstructProjects/.github/workflows/maven-build.yml@main
+    with:
+      repository: "BetterGUI-MC/BetterForms"
+      name: "BetterForms"
+      java: 8
+ 
