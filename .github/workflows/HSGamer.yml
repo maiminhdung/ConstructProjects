@@ -14,5 +14,5 @@ jobs:
     with:
       repository: "BetterGUI-MC/BetterForms"
       name: "BetterForms"
-      java: 8
+      java: 17
  
