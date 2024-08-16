@@ -2,7 +2,7 @@ name: Maxlego08
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
     paths:
       - '.github/workflows/Maxlego08.yml'
   schedule:
