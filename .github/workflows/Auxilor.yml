@@ -10,7 +10,7 @@ on:
 
 jobs:
   EcoJobs:
-    uses: HSGamer/ConstructProjects/.github/workflows/gradle-build.yml@main
+    uses: Dungjava/ConstructProjects/.github/workflows/gradle-build.yml@main
     with:
       repository: "Auxilor/EcoJobs"
       target: "bin/*"
