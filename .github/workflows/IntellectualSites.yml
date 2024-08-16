@@ -10,7 +10,7 @@ on:
 
 jobs:
   PlotSquared:
-    uses: HSGamer/ConstructProjects/.github/workflows/gradle-build.yml@main
+    uses: Dungjava/ConstructProjects/.github/workflows/gradle-build.yml@main
     with:
       repository: "IntellectualSites/PlotSquared"
       name: "PlotSquared"
