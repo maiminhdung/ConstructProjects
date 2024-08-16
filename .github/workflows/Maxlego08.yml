@@ -1,0 +1,16 @@
+name: Maxlego08
+
+on:
+  push:
+    branches: [ master ]
+    paths:
+      - '.github/workflows/IntellectualSites.yml'
+  schedule:
+    - cron: '0 */12 * * *'
+
+jobs:
+  zEssentials:
+    uses: HSGamer/ConstructProjects/.github/workflows/gradle-build.yml@main
+    with:
+      repository: "Maxlego08/zEssentials"
+      name: "zEssentials"
