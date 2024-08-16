@@ -4,7 +4,7 @@ on:
   push:
     branches: [ master ]
     paths:
-      - '.github/workflows/IntellectualSites.yml'
+      - '.github/workflows/Maxlego08.yml'
   schedule:
     - cron: '0 */12 * * *'
 
