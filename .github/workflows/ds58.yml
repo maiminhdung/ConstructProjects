@@ -24,6 +24,7 @@ jobs:
         JAVA_HOME_8="JAVA_HOME_8_${RUNNER_ARCH}"
         JAVA_HOME_16="JAVA_HOME_16_${RUNNER_ARCH}"
         JAVA_HOME_17="JAVA_HOME_17_${RUNNER_ARCH}"
+        JAVA_HOME_21="JAVA_HOME_21_${RUNNER_ARCH}"
         "${!JAVA_HOME_8}"/bin/java -jar BuildTools.jar --rev 1.8.8 --compile craftbukkit
         "${!JAVA_HOME_8}"/bin/java -jar BuildTools.jar --rev 1.12.2 --compile craftbukkit
         "${!JAVA_HOME_8}"/bin/java -jar BuildTools.jar --rev 1.13.2 --compile craftbukkit
