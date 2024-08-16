@@ -10,7 +10,7 @@ on:
 
 jobs:
   Iris:
-    uses: HSGamer/ConstructProjects/.github/workflows/gradle-build.yml@main
+    uses: Dungjava/ConstructProjects/.github/workflows/gradle-build.yml@main
     with:
       repository: "VolmitSoftware/Iris"
       name: "Iris"
