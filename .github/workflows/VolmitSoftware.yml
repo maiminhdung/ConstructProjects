@@ -14,19 +14,16 @@ jobs:
     with:
       repository: "VolmitSoftware/Iris"
       name: "Iris"
-      java: "21"
+      java: "17"
       commands: |
         curl -o BuildTools.jar https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar
-        JAVA_HOME_21="JAVA_HOME_21_${RUNNER_ARCH}"
-        "${!JAVA_HOME_21}"/bin/java -jar BuildTools.jar --rev 1.19.2 --compile craftbukkit --remapped
-        "${!JAVA_HOME_21}"/bin/java -jar BuildTools.jar --rev 1.19.3 --compile craftbukkit --remapped
-        "${!JAVA_HOME_21}"/bin/java -jar BuildTools.jar --rev 1.19.4 --compile craftbukkit --remapped
-        "${!JAVA_HOME_21}"/bin/java -jar BuildTools.jar --rev 1.20.1 --compile craftbukkit --remapped
-        "${!JAVA_HOME_21}"/bin/java -jar BuildTools.jar --rev 1.20.2 --compile craftbukkit --remapped
-        "${!JAVA_HOME_21}"/bin/java -jar BuildTools.jar --rev 1.20.4 --compile craftbukkit --remapped
-        "${!JAVA_HOME_21}"/bin/java -jar BuildTools.jar --rev 1.20.6 --compile craftbukkit --remapped
-        "${!JAVA_HOME_21}"/bin/java -jar BuildTools.jar --rev 1.21 --compile craftbukkit --remapped
-        "${!JAVA_HOME_21}"/bin/java -jar BuildTools.jar --rev 1.21.1 --compile craftbukkit --remapped
+        JAVA_HOME_17="JAVA_HOME_17_${RUNNER_ARCH}"
+        "${!JAVA_HOME_17}"/bin/java -jar BuildTools.jar --rev 1.19.2 --compile craftbukkit --remapped
+        "${!JAVA_HOME_17}"/bin/java -jar BuildTools.jar --rev 1.19.3 --compile craftbukkit --remapped
+        "${!JAVA_HOME_17}"/bin/java -jar BuildTools.jar --rev 1.19.4 --compile craftbukkit --remapped
+        "${!JAVA_HOME_17}"/bin/java -jar BuildTools.jar --rev 1.20.1 --compile craftbukkit --remapped
+        "${!JAVA_HOME_17}"/bin/java -jar BuildTools.jar --rev 1.20.2 --compile craftbukkit --remapped
+        "${!JAVA_HOME_17}"/bin/java -jar BuildTools.jar --rev 1.20.4 --compile craftbukkit --remapped
   Adapt:
     uses: HSGamer/ConstructProjects/.github/workflows/gradle-build.yml@main
     with:
