@@ -15,4 +15,4 @@ jobs:
       repository: "Maxlego08/zEssentials"
       name: "zEssentials"
       java: 17
-      target: "build/libs/*"
+      target: "target/*"
