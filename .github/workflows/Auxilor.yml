@@ -113,6 +113,22 @@ jobs:
       name: "Actions"
       java: 17
       readonly: true
+  EcoQuests:
+    uses: HSGamer/ConstructProjects/.github/workflows/gradle-build.yml@main
+    with:
+      repository: "Auxilor/EcoQuests"
+      target: "bin/*"
+      name: "EcoQuests"
+      java: 17
+      readonly: true
+  EcoScrolls:
+    uses: HSGamer/ConstructProjects/.github/workflows/gradle-build.yml@main
+    with:
+      repository: "Auxilor/EcoScrolls"
+      target: "bin/*"
+      name: "EcoScrolls"
+      java: 17
+      readonly: true
   EcoShop:
     uses: HSGamer/ConstructProjects/.github/workflows/gradle-build.yml@main
     with:
@@ -127,13 +143,5 @@ jobs:
       repository: "Auxilor/EcoBits"
       target: "bin/*"
       name: "EcoBits"
-      java: 17
-      readonly: true
-  EcoQuests:
-    uses: HSGamer/ConstructProjects/.github/workflows/gradle-build.yml@main
-    with:
-      repository: "Auxilor/EcoQuests"
-      target: "bin/*"
-      name: "EcoQuests"
       java: 17
       readonly: true
