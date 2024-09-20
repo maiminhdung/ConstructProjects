@@ -1,0 +1,25 @@
+name: test
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+    - '.github/workflows/test.yml'
+  schedule:
+    - cron: '0 */6 * * *'
+
+jobs:
+  MultiverseCore:
+    uses: Dungjava/ConstructProjects/.github/workflows/gradle-build.yml@main
+    with:
+      repository: "Piratemajo/Multiverse-Core-Folia"
+      target: "libs/*"
+      name: "Multiverse-Core-Folia"
+      java: 11
+  MultiverseCoreZeta:
+    uses: Dungjava/ConstructProjects/.github/workflows/gradle-build.yml@main
+    with:
+      repository: "RenYuan-MC/Multiverse-Core_Zeta"
+      target: "libs/*"
+      name: "Multiverse-Core_Zeta"
+      java: 11
