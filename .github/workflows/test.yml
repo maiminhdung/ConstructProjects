@@ -13,13 +13,13 @@ jobs:
     uses: Dungjava/ConstructProjects/.github/workflows/gradle-build.yml@main
     with:
       repository: "Piratemajo/Multiverse-Core-Folia"
-      target: "*"
+      target: "build/libs/*.jar"
       name: "Multiverse_Core_Folia"
       java: 11
   MultiverseCoreZeta:
     uses: Dungjava/ConstructProjects/.github/workflows/gradle-build.yml@main
     with:
       repository: "RenYuan-MC/Multiverse-Core_Zeta"
-      target: "*"
+      target: "build/libs/*.jar"
       name: "Multiverse-Core_Zeta"
       java: 11
