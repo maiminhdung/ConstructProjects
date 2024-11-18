@@ -4,7 +4,7 @@ on:
   push:
     branches: [ main ]
     paths:
-      - '.github/workflows/ds58.yml'
+      - '.github/workflows/Dungjava.yml'
   schedule:
     - cron: '0 0 * * *'
 
