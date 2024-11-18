@@ -9,7 +9,7 @@ on:
     - cron: '0 0 * * *'
 
 jobs:
-  Panilla:
+  ValhallaMMO:
     uses: Dungjava/ConstructProjects/.github/workflows/maven-build.yml@main
     with:
       repository: "Dungjava/ValhallaMMO"
