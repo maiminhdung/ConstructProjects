@@ -22,8 +22,6 @@ jobs:
         21
       commands: |
         curl -o BuildTools.jar https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar
-        curl -o paper-1.20.6-148.jar https://api.papermc.io/v2/projects/paper/versions/1.20.6/builds/148/downloads/paper-1.20.6-148.jar
-        curl -o paper-1.21-130.jar https://api.papermc.io/v2/projects/paper/versions/1.21/builds/130/downloads/paper-1.21-130.jar
         JAVA_HOME_8="JAVA_HOME_8_${RUNNER_ARCH}"
         JAVA_HOME_16="JAVA_HOME_16_${RUNNER_ARCH}"
         JAVA_HOME_17="JAVA_HOME_17_${RUNNER_ARCH}"
@@ -45,5 +43,3 @@ jobs:
         "${!JAVA_HOME_17}"/bin/java -jar BuildTools.jar --rev 1.20
         "${!JAVA_HOME_17}"/bin/java -jar BuildTools.jar --rev 1.20.2
         "${!JAVA_HOME_17}"/bin/java -jar BuildTools.jar --rev 1.20.4
-        "${!JAVA_HOME_21}"/bin/java -jar BuildTools.jar --rev 1.20.6 --compile craftbukkit
-        "${!JAVA_HOME_21}"/bin/java -jar BuildTools.jar --rev 1.21 --compile craftbukkit

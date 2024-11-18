@@ -14,7 +14,7 @@ jobs:
     with:
       repository: "Dungjava/ValhallaMMO"
       name: "ValhallaMMO"
-      target: "*"
+      target: "dist/target/*.jar"
       java: |
         17
         21
@@ -22,12 +22,12 @@ jobs:
         curl -o BuildTools.jar https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar
         JAVA_HOME_17="JAVA_HOME_17_${RUNNER_ARCH}"
         JAVA_HOME_21="JAVA_HOME_21_${RUNNER_ARCH}"
-        "${!JAVA_HOME_17}"/bin/java -jar BuildTools.jar --rev 1.19 --remapped
-        "${!JAVA_HOME_17}"/bin/java -jar BuildTools.jar --rev 1.19.3 --remapped
-        "${!JAVA_HOME_17}"/bin/java -jar BuildTools.jar --rev 1.19.4 --remapped
-        "${!JAVA_HOME_17}"/bin/java -jar BuildTools.jar --rev 1.20.1 --remapped
-        "${!JAVA_HOME_17}"/bin/java -jar BuildTools.jar --rev 1.20.2 --remapped
-        "${!JAVA_HOME_17}"/bin/java -jar BuildTools.jar --rev 1.20.4 --remapped
-        "${!JAVA_HOME_21}"/bin/java -jar BuildTools.jar --rev 1.20.6 --remapped
-        "${!JAVA_HOME_21}"/bin/java -jar BuildTools.jar --rev 1.21.1 --remapped
-        "${!JAVA_HOME_21}"/bin/java -jar BuildTools.jar --rev 1.21.3 --remapped
+        "${!JAVA_HOME_17}"/bin/java -jar BuildTools.jar --rev 1.19 --compile spigot --remapped
+        "${!JAVA_HOME_17}"/bin/java -jar BuildTools.jar --rev 1.19.3 --compile spigot --remapped
+        "${!JAVA_HOME_17}"/bin/java -jar BuildTools.jar --rev 1.19.4 --compile spigot --remapped
+        "${!JAVA_HOME_17}"/bin/java -jar BuildTools.jar --rev 1.20.1 --compile spigot --remapped
+        "${!JAVA_HOME_17}"/bin/java -jar BuildTools.jar --rev 1.20.2 --compile spigot --remapped
+        "${!JAVA_HOME_17}"/bin/java -jar BuildTools.jar --rev 1.20.4 --compile spigot --remapped
+        "${!JAVA_HOME_21}"/bin/java -jar BuildTools.jar --rev 1.20.6 --compile spigot --remapped
+        "${!JAVA_HOME_21}"/bin/java -jar BuildTools.jar --rev 1.21.1 --compile spigot --remapped
+        "${!JAVA_HOME_21}"/bin/java -jar BuildTools.jar --rev 1.21.3 --compile spigot --remapped
