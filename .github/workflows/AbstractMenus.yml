@@ -4,7 +4,7 @@ on:
   push:
     branches: [ main ]
     paths:
-      - '.github.com/AbstractMenus/minecraft-plugin.git'
+      - '.github/workflows/AbstractMenus.yml'
   schedule:
     - cron: '0 */12 * * *'
 
