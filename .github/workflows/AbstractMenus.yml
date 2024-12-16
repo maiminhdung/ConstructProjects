@@ -9,7 +9,7 @@ on:
     - cron: '0 */12 * * *'
 
 jobs:
-  zEssentials:
+  AbstractMenus:
     uses: Dungjava/ConstructProjects/.github/workflows/gradle-build.yml@main
     with:
       repository: "AbstractMenus/minecraft-plugin"
