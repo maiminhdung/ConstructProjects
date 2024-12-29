@@ -10,7 +10,7 @@ on:
     
 jobs:
   ZNPCsPlus:
-    uses: Dungjava/ConstructProjects/.github/workflows/gradle-build.yml@main
+    uses: maiminhdung/ConstructProjects/.github/workflows/gradle-build.yml@main
     with:
       repository: "Pyrbu/ZNPCsPlus"
       name: "ZNPCsPlus"
