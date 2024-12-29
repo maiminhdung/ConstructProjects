@@ -10,7 +10,7 @@ on:
 
 jobs: 
   BetterForms:
-    uses: Dungjava/ConstructProjects/.github/workflows/maven-build.yml@main
+    uses: maiminhdung/ConstructProjects/.github/workflows/maven-build.yml@main
     with:
       repository: "BetterGUI-MC/BetterForms"
       name: "BetterForms"
