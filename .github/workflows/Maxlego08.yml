@@ -10,7 +10,7 @@ on:
 
 jobs:
   zEssentials:
-    uses: Dungjava/ConstructProjects/.github/workflows/gradle-build.yml@main
+    uses: maiminhdung/ConstructProjects/.github/workflows/gradle-build.yml@main
     with:
       repository: "Maxlego08/zEssentials"
       name: "zEssentials"
