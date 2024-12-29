@@ -138,7 +138,7 @@ jobs:
       java: 17
       readonly: true
   EcoBits:
-    uses: HSGamer/ConstructProjects/.github/workflows/gradle-build.yml@main
+    uses: maiminhdung/ConstructProjects/.github/workflows/gradle-build.yml@main
     with:
       repository: "Auxilor/EcoBits"
       target: "bin/*"
