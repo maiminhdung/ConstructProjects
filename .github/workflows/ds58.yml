@@ -10,7 +10,7 @@ on:
 
 jobs:
   Panilla:
-    uses: Dungjava/ConstructProjects/.github/workflows/gradle-build.yml@main
+    uses: maiminhdung/ConstructProjects/.github/workflows/gradle-build.yml@main
     with:
       repository: "ds58/Panilla"
       name: "Panilla"
