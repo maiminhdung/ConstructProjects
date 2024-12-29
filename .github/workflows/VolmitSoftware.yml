@@ -26,13 +26,13 @@ jobs:
         "${!JAVA_HOME_17}"/bin/java -jar BuildTools.jar --rev 1.20.2 --compile craftbukkit --remapped
         "${!JAVA_HOME_17}"/bin/java -jar BuildTools.jar --rev 1.20.4 --compile craftbukkit --remapped
   Adapt:
-    uses: HSGamer/ConstructProjects/.github/workflows/gradle-build.yml@main
+    uses: maiminhdung/ConstructProjects/.github/workflows/gradle-build.yml@main
     with:
       repository: "VolmitSoftware/Adapt"
       name: "Adapt"
       java: "17"
   React:
-    uses: HSGamer/ConstructProjects/.github/workflows/gradle-build.yml@main
+    uses: maiminhdung/ConstructProjects/.github/workflows/gradle-build.yml@main
     with:
       repository: "VolmitSoftware/React"
       name: "React"
