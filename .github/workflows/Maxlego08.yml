@@ -14,12 +14,12 @@ jobs:
     with:
       repository: "Maxlego08/zEssentials"
       name: "zEssentials"
-      java: 17
+      java: 21
       target: "target/*"
   zShop:
     uses: maiminhdung/ConstructProjects/.github/workflows/maven-build.yml@main
     with:
       repository: "XingLingQAQ/zShop"
       name: "zShop"
-      java: 17
-      target: "target/*"
+      java: 8
+      target: "*"
