@@ -19,7 +19,6 @@ jobs:
   zShop:
     uses: maiminhdung/ConstructProjects/.github/workflows/maven-build.yml@main
     with:
-      repository: "ssquadteam/zShop"
+      repository: "XingLingQAQ/zShop"
       name: "zShop"
-      java: 8
-      target: "*"
+      java: 17
