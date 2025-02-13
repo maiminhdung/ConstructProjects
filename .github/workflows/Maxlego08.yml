@@ -16,3 +16,10 @@ jobs:
       name: "zEssentials"
       java: 17
       target: "target/*"
+  zShop:
+    uses: maiminhdung/ConstructProjects/.github/workflows/gradle-build.yml@main
+    with:
+      repository: "XingLingQAQ/zShop"
+      name: "zShop"
+      java: 17
+      target: "target/*"
