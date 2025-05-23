@@ -15,4 +15,10 @@ jobs:
       repository: "BetterGUI-MC/BetterForms"
       name: "BetterForms"
       java: 17
+  ExtraStorage:
+    uses: maiminhdung/ConstructProjects/.github/workflows/maven-build.yml@main
+    with:
+      repository: "HSGamer/ExtraStorage"
+      name: "ExtraStorage"
+      java: 17
  
